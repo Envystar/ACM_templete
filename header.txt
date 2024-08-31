@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[a4paper, landscape, top=1cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry} % 设置页边距
+\usepackage[fontset=none]{ctex}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{multicol}
+
+% 设置中文字体
+\setCJKmainfont[AutoFakeBold={2.5}]{NSimSun} % 华文中宋
+\setmonofont{Fira Code}
+
+\linespread{1.6}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{2em}
+\setlength\columnsep{0.7cm} 
+
+\titleformat{\section}
+{\zihao{-3}\Large\bfseries}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\zihao{-3}\large\bfseries}
+{\thesubsection}{0.5em}{}
+
+% 定义代码高亮样式
+\lstdefinestyle{cppstyle}{
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=true,
+    tabsize=4,
+    frame=single,
+    backgroundcolor=\color{white},
+    rulecolor=\color{black},
+    numberstyle=\tiny\color{black}
+}
+
+\begin{document}
+\begin{multicols*}{2}
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}

@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage[a4paper, landscape, top=1cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry} % 设置页边距
+\usepackage[fontset=none]{ctex}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{multicol}
+
+% 设置中文字体
+\setCJKmainfont[AutoFakeBold={2.5}]{NSimSun} % 华文中宋
+\setmonofont{Fira Code}
+
+\linespread{1.6}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{2em}
+\setlength\columnsep{0.7cm} 
+
+\titleformat{\section}
+{\zihao{-3}\Large\bfseries}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\zihao{-3}\large\bfseries}
+{\thesubsection}{0.5em}{}
+
+% 定义代码高亮样式
+\lstdefinestyle{cppstyle}{
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=true,
+    tabsize=4,
+    frame=single,
+    backgroundcolor=\color{white},
+    rulecolor=\color{black},
+    numberstyle=\tiny\color{black}
+}
+
+\begin{document}
+\begin{multicols*}{2}
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\section{图论}
+\subsection{Tarjan割点}
+\lstinputlisting[style=cppstyle]{./src/图论/Tarjan割点.cpp}
+\subsection{Tarjan割边}
+\lstinputlisting[style=cppstyle]{./src/图论/Tarjan割边.cpp}
+\subsection{Tarjan强连通分量}
+\lstinputlisting[style=cppstyle]{./src/图论/Tarjan强连通分量.cpp}
+\subsection{Tarjan点双连通分量}
+\lstinputlisting[style=cppstyle]{./src/图论/Tarjan点双连通分量.cpp}
+\subsection{Tarjan边双连通分量}
+\lstinputlisting[style=cppstyle]{./src/图论/Tarjan边双连通分量.cpp}
+\subsection{拓扑排序}
+\lstinputlisting[style=cppstyle]{./src/图论/拓扑排序.cpp}
+\subsection{最小生成树kruskal}
+\lstinputlisting[style=cppstyle]{./src/图论/最小生成树kruskal.cpp}
+\subsection{最小生成树prim}
+\lstinputlisting[style=cppstyle]{./src/图论/最小生成树prim.cpp}
+\section{基础算法}
+\subsection{三分}
+\lstinputlisting[style=cppstyle]{./src/基础算法/三分.cpp}
+\subsection{二分}
+\lstinputlisting[style=cppstyle]{./src/基础算法/二分.cpp}
+\subsection{快速幂}
+\lstinputlisting[style=cppstyle]{./src/基础算法/快速幂.cpp}
+\subsection{离散化}
+\lstinputlisting[style=cppstyle]{./src/基础算法/离散化.cpp}
+\section{字符串}
+\subsection{EXKMP}
+\lstinputlisting[style=cppstyle]{./src/字符串/EXKMP.cpp}
+\subsection{KMP}
+\lstinputlisting[style=cppstyle]{./src/字符串/KMP.cpp}
+\subsection{字符串哈希}
+\lstinputlisting[style=cppstyle]{./src/字符串/字符串哈希.cpp}
+\subsection{马拉车}
+\lstinputlisting[style=cppstyle]{./src/字符串/马拉车.cpp}
+\section{数据结构}
+\subsection{Splay}
+\lstinputlisting[style=cppstyle]{./src/数据结构/Splay.cpp}
+\subsection{ST表}
+\lstinputlisting[style=cppstyle]{./src/数据结构/ST表.cpp}
+\subsection{对顶堆}
+\lstinputlisting[style=cppstyle]{./src/数据结构/对顶堆.cpp}
+\subsection{并查集}
+\lstinputlisting[style=cppstyle]{./src/数据结构/并查集.cpp}
+\subsection{树状数组}
+\lstinputlisting[style=cppstyle]{./src/数据结构/树状数组.cpp}
+\subsection{线段树}
+\lstinputlisting[style=cppstyle]{./src/数据结构/线段树.cpp}
+\section{数论}
+\subsection{欧拉筛}
+\lstinputlisting[style=cppstyle]{./src/数论/欧拉筛.cpp}
+\section{树算法}
+\subsection{树剖LCA}
+\lstinputlisting[style=cppstyle]{./src/树算法/树剖LCA.cpp}
+\end{multicols*}
+\end{document}
