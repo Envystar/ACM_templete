@@ -17,6 +17,9 @@ int main() {
     auto find = [](auto self, const std::filesystem::path &path, int level) ->void {
         for (const auto& entry : std::filesystem::directory_iterator(path)) {  
             std::string file_name = entry.path().filename().string();
+            if(std::isdigit(file_name.front())) {
+                file_name = file_name.substr(2);
+            }
             file_name.erase(std::find(file_name.begin(), file_name.end(), '.'), file_name.end()); //去后缀
             std::string file_path = entry.path().string();
             std::replace(file_path.begin(), file_path.end(), '\\', '/');

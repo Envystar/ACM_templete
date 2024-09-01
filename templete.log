@@ -1,12 +1,12 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  31 AUG 2024 23:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  1 SEP 2024 10:47
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**templete.tex
-(./templete.tex
+**d:/Enar/VSCode/C++/templete/templete
+(d:/Enar/VSCode/C++/templete/templete.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22>
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2023-02-22> (d:/Program Files/latex/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
 (d:/Program Files/latex/2023/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
@@ -22,18 +22,14 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/geometry/geometry.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics/keyval.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(d:/Program Files/latex/2023/texmf-dist/tex/generic/iftex/iftex.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count189
@@ -48,12 +44,9 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks17
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/ctex.sty
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/ctex.sty (d:/Program Files/latex/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2023-02-22 L3 programming layer (loader) 
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
 \g__graphics_track_int=\count192
 \l__pdf_internal_box=\box51
@@ -64,14 +57,11 @@ File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
 Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaTeX (CTEX)
  (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/ctexpatch.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/ctexpatch.sty
 Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/base/fix-cm.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/base/ts1enc.def
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
@@ -80,18 +70,13 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 \l__ctex_tmp_dim=\dimen149
 \g__ctex_section_depth_int=\count197
 \g__ctex_font_size_int=\count198
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex
-.def
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
 File: ctex-engine-xetex.def 2022/07/14 v2.5.10 XeLaTeX adapter (CTEX)
  (d:/Program Files/latex/2023/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/l3packages/xtemplate/xtemplat
-e.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen150
 \l__xtemplate_tmp_int=\count199
@@ -158,14 +143,12 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \g__xeCJK_fam_allocation_int=\count276
 \l__xeCJK_verb_case_int=\count277
 \l__xeCJK_verb_exspace_skip=\skip57
- (d:/Program Files/latex/2023/texmf-dist/tex/latex/fontspec/fontspec.sty
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/fontspec/fontspec.sty (d:/Program Files/latex/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
-X
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count278
 \l__fontspec_language_int=\count279
 \l__fontspec_strnum_int=\count280
@@ -180,45 +163,32 @@ X
 \l__fontspec_tmpa_dim=\dimen178
 \l__fontspec_tmpb_dim=\dimen179
 \l__fontspec_tmpc_dim=\dimen180
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/base/fontenc.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
-(d:/Program Files/latex/2023/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/Program Files/latex/2023/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 ))
 \ccwd=\dimen181
 \l__ctex_ccglue_skip=\skip58
 )
 \l__ctex_ziju_dim=\dimen182
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
 \l__zhnum_scale_int=\count289
 \l__zhnum_tmp_int=\count290
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
-))
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chine
-se.def
-File: ctex-scheme-chinese.def 2022/07/14 v2.5.10 Chinese scheme for generic (CT
-EX)
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cf
-g
+)) (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
+File: ctex-scheme-chinese.def 2022/07/14 v2.5.10 Chinese scheme for generic (CTEX)
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
 File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
 )) (d:/Program Files/latex/2023/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/ctex-c5size.clo
 File: ctex-c5size.clo 2022/07/14 v2.5.10 c5size option (CTEX)
-))
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/config/ctex.cfg
+)) (d:/Program Files/latex/2023/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box55
 \beforetitleunit=\skip59
@@ -229,8 +199,7 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidth=\dimen185
 \titlewidthlast=\dimen186
 \titlewidthfirst=\dimen187
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/listings/listings.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count291
 \lst@gtempboxa=\box56
 \lst@token=\toks19
@@ -243,35 +212,28 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \lst@newlines=\count295
 \lst@lineno=\count296
 \lst@maxwidth=\dimen191
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 \c@lstnumber=\count297
 \lst@skipnumbers=\count298
 \lst@framebox=\box57
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/listings/listings.cfg
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
-
-(d:/Program Files/latex/2023/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+ (d:/Program Files/latex/2023/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2022/08/05 v3.9.1 xeCJK patch file for listings
 \l__xeCJK_listings_max_char_int=\count299
 \l__xeCJK_listings_flag_int=\count300
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 227.
-
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics-def/xetex.def
+ (d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1369.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
@@ -280,8 +242,7 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-)
-(d:/Program Files/latex/2023/texmf-dist/tex/latex/tools/multicol.sty
+) (d:/Program Files/latex/2023/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \c@tracingmulticols=\count301
 \mult@box=\box58
@@ -383,8 +344,7 @@ Package fontspec Info: Could not resolve font "Fira Code/I" (it probably
 
 Package fontspec Info: Font family 'FiraCode(0)' created for font 'Fira Code'
 (fontspec)             with options
-(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
-Space].
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -414,8 +374,7 @@ Space].
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
-
-(./templete.aux)
+ (./templete.aux)
 \openout1 = `templete.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -547,22 +506,14 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-(./src/图论/Tarjan割点.cpp) (./src/图论/Tarjan割边.cpp [1]) (./src/图论/Tarjan强连通分量.cpp
-[2]) (./src/图论/Tarjan点双连通分量.cpp [3]) (./src/图论/Tarjan边双连通分量.cpp [4])
-(./src/图论/拓扑排序.cpp) (./src/图论/最小生成树kruskal.cpp [5]) (./src/图论/最小生成树prim.cpp
-[6]) (./src/基础算法/三分.cpp) (./src/基础算法/二分.cpp [7]) (./src/基础算法/快速幂.cpp)
-(./src/基础算法/离散化.cpp) [8] (./src/字符串/EXKMP.cpp) (./src/字符串/KMP.cpp [9])
-(./src/字符串/字符串哈希.cpp) (./src/字符串/马拉车.cpp [10]) (./src/数据结构/Splay.cpp [11]
-[12] [13]) (./src/数据结构/ST表.cpp [14]) (./src/数据结构/对顶堆.cpp) [15]
-(./src/数据结构/并查集.cpp) (./src/数据结构/树状数组.cpp [16]) (./src/数据结构/线段树.cpp [17]
-[18]) (./src/数论/欧拉筛.cpp) [19] (./src/树算法/树剖LCA.cpp) [20] (./templete.aux) ) 
+(./src/1 基础算法/三分.cpp) (./src/1 基础算法/二分.cpp [1]) (./src/1 基础算法/快速幂.cpp) (./src/1 基础算法/离散化.cpp) (./src/2 图论/Tarjan割点.cpp [2]) (./src/2 图论/Tarjan割边.cpp [3]) (./src/2 图论/Tarjan强连通分量.cpp [4]) (./src/2 图论/Tarjan点双连通分量.cpp [5]) (./src/2 图论/Tarjan边双连通分量.cpp) (./src/2 图论/拓扑排序.cpp [6]) (./src/2 图论/最小生成树kruskal.cpp [7]) (./src/2 图论/最小生成树prim.cpp) [8] (./src/3 数据结构/Splay.cpp [9] [10]) (./src/3 数据结构/ST表.cpp [11]) (./src/3 数据结构/对顶堆.cpp [12]) (./src/3 数据结构/并查集.cpp) [13] (./src/3 数据结构/树状数组.cpp) (./src/3 数据结构/线段树.cpp [14] [15]) (./src/4 树算法/树剖LCA.cpp [16]) (./src/5 数论/欧拉筛.cpp [17]) (./src/6 字符串/EXKMP.cpp [18]) (./src/6 字符串/KMP.cpp) (./src/6 字符串/字符串哈希.cpp [19]) (./src/6 字符串/马拉车.cpp) [20] (./templete.aux) ) 
 Here is how much of TeX's memory you used:
- 9219 strings out of 476683
- 236446 string characters out of 5802284
- 2813012 words of memory out of 5000000
+ 9220 strings out of 476683
+ 236732 string characters out of 5802284
+ 2722012 words of memory out of 5000000
  29291 multiletter control sequences out of 15000+600000
  515085 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,368b,1903s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,392b,1915s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on templete.pdf (21 pages).
