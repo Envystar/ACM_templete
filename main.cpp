@@ -43,7 +43,5 @@ int main() {
     std::cout << readFileContent(header_path) << std::endl;
     find(find, source_path, 0);
     std::cout << readFileContent(bottom_path) << std::endl;
-    fclose(stdout);
-    system("xelatex templete.tex");
     return 0;
 }
