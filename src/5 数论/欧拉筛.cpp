@@ -1,26 +1,34 @@
 #include <bits/stdc++.h>
+using i64 = long long;
+constexpr int MAXN = 1E8; 
+std::vector<int> prime;
+std::vector<bool> nonPrime(MAXN + 1);
 
+void findPrime(int n) { //[0, n]之间素数 
+    nonPrime[0] = nonPrime[1] = 1;
+    for(int i = 2; i <= n; ++i) {
+        if(nonPrime[i] == false) {
+            prime.push_back(i);
+        }
+        for(int j = 0; i * prime[j] <= n; ++j) {
+            nonPrime[i * prime[j]] = true;
+            if(i % prime[j] == 0) break;
+        }
+    }
+}
+
+//线性筛
+//https://www.luogu.com.cn/problem/P3383
 int main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
-    int n;
-    std::cin >> n;
-    std::vector<bool> isPrime(n + 1, 1);
-    std::vector<int> res = {2}; //存放质数
-    isPrime[0] = 0;
-    for (int i = 3; i <= n; i += 2) {
-        if (isPrime[i]) { //如果是素数, 则记录
-            res.push_back(i);
-        }
-        for (int j = 0; res[j] * i <= n && j < res.size(); ++j) {
-            isPrime[res[j] * i] = 0;//找出素数的倍数，标记为合数
-            if (i % res[j] == 0) break;          
-        }
-    }
-    std::cout << res.size() << '\n';
-    for(auto x : res) {
-        std::cout << x << ' ';
+    int n, q;
+    std::cin >> n >> q;
+    findPrime(n);
+    while(q--) {
+        int idx;
+        std::cin >> idx;
+        std::cout << prime[idx - 1] << '\n';
     }
     return 0;
 }
-

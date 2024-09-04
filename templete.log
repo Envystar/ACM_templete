@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  3 SEP 2024 20:15
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  5 SEP 2024 03:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,14 +512,14 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-(./src/1 基础算法/三分.cpp) (./src/1 基础算法/二分.cpp [1]) (./src/1 基础算法/快速幂.cpp) (./src/1 基础算法/离散化.cpp) (./src/2 图论/Tarjan割点.cpp [2]) (./src/2 图论/Tarjan割边.cpp [3]) (./src/2 图论/Tarjan强连通分量.cpp [4]) (./src/2 图论/Tarjan点双连通分量.cpp [5]) (./src/2 图论/Tarjan边双连通分量.cpp) (./src/2 图论/拓扑排序.cpp [6]) (./src/2 图论/最小生成树kruskal.cpp [7]) (./src/2 图论/最小生成树prim.cpp) [8] (./src/3 数据结构/Splay.cpp [9] [10]) (./src/3 数据结构/ST表.cpp [11]) (./src/3 数据结构/对顶堆.cpp [12]) (./src/3 数据结构/并查集.cpp) [13] (./src/3 数据结构/树状数组.cpp) (./src/3 数据结构/线段树.cpp [14] [15]) (./src/4 树算法/树剖LCA.cpp [16]) (./src/5 数论/欧拉筛.cpp [17]) (./src/6 字符串/EXKMP.cpp [18]) (./src/6 字符串/KMP.cpp) (./src/6 字符串/字符串哈希.cpp [19]) (./src/6 字符串/马拉车.cpp) [20] (./templete.aux) ) 
+(./src/1 基础算法/三分.cpp) (./src/1 基础算法/二分.cpp [1]) (./src/1 基础算法/快速幂.cpp) (./src/1 基础算法/离散化.cpp) (./src/2 图论/Tarjan割点.cpp [2]) (./src/2 图论/Tarjan割边.cpp [3]) (./src/2 图论/Tarjan强连通分量.cpp [4]) (./src/2 图论/Tarjan点双连通分量.cpp [5]) (./src/2 图论/Tarjan边双连通分量.cpp) (./src/2 图论/拓扑排序.cpp [6]) (./src/2 图论/最小生成树kruskal.cpp [7]) (./src/2 图论/最小生成树prim.cpp) [8] (./src/3 数据结构/Splay.cpp [9] [10]) (./src/3 数据结构/ST表.cpp [11]) (./src/3 数据结构/对顶堆.cpp [12]) (./src/3 数据结构/并查集.cpp) [13] (./src/3 数据结构/树状数组.cpp) (./src/3 数据结构/线段树.cpp [14] [15]) (./src/4 树算法/树剖LCA.cpp [16]) (./src/5 数论/MillerRabin.cpp [17]) (./src/5 数论/PollardRho.cpp [18] [19]) (./src/5 数论/区间筛.cpp) [20] (./src/5 数论/欧拉筛.cpp) (./src/6 字符串/EXKMP.cpp [21]) (./src/6 字符串/KMP.cpp) (./src/6 字符串/字符串哈希.cpp [22]) (./src/6 字符串/马拉车.cpp [23]) [24] (./templete.aux) ) 
 Here is how much of TeX's memory you used:
- 10036 strings out of 476683
- 245086 string characters out of 5802284
- 2725012 words of memory out of 5000000
- 30100 multiletter control sequences out of 15000+600000
+ 10149 strings out of 476683
+ 246503 string characters out of 5802284
+ 2724012 words of memory out of 5000000
+ 30204 multiletter control sequences out of 15000+600000
  515085 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,460b,2022s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,460b,2038s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on templete.pdf (21 pages).
+Output written on templete.pdf (25 pages).
