@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[a4paper, landscape, top=1cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry} % 设置页边距
+\usepackage[a4paper, landscape, top=1cm, bottom=1.5cm, left=1.5cm, right=1cm]{geometry} % 设置页边距
 \usepackage[fontset=none]{ctex}
 \usepackage{titlesec}
 \usepackage{listings}

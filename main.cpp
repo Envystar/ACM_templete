@@ -3,7 +3,7 @@
 const std::string header_path = ".\\header.txt"; 
 const std::string bottom_path = ".\\bottom.txt";
 const std::string source_path = ".\\src";
-
+const std::string output_path = ".\\templete.tex";
 std::string readFileContent(const std::string& filePath) {  
     std::ifstream file(filePath);  
     std::string content((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());  
@@ -12,7 +12,7 @@ std::string readFileContent(const std::string& filePath) {
 
 int main() {
     
-    freopen("templete.tex", "w", stdout);
+    freopen(output_path.c_str(), "w", stdout);
     
     auto find = [](auto self, const std::filesystem::path &path, int level) ->void {
         for (const auto& entry : std::filesystem::directory_iterator(path)) {  

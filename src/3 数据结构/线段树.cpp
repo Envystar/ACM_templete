@@ -8,7 +8,7 @@ struct SegmentTree {
 #define ls (id<<1)
 #define rs (id<<1|1)
     SegmentTree(int n) : n(n), info(n << 2), tag(n << 2) {}
-    SegmentTree(const std::vector<Info> &init) : SegmentTree(init.size()) {
+    SegmentTree(const std::vector<Info> &init) : SegmentTree((int)init.size() - 1) {
         auto build = [&](auto self, int id, int l, int r) ->void {
             if(l == r) {
                 info[id] = init[l];
@@ -33,28 +33,17 @@ struct SegmentTree {
         apply(rs, tag[id]);
         tag[id] = Tag();
     }
-    void update(int t, const Info &val) {
-        update(1, 1, n, t, val);
-    }
     void rangeUpdate(int l, int r, const Tag &dx) {
         rangeUpdate(1, 1, n, l, r, dx);
+    }
+    void update(int t, const Tag &dx) {
+        rangeUpdate(t, t, dx);
     }
     Info rangeQuery(int l, int r) {
         return rangeQuery(1, 1, n, l, r);
     }
-    void update(int id, int l, int r, int t, const Info &val) {
-        if(l == r) {
-            info[id] = val;
-            return;
-        }
-        int mid = (l + r) / 2;
-        pushdown(id);
-        if(t <= mid) {
-            update(ls, l, mid, t, val);
-        } else if(t > mid) {
-            update(rs, mid + 1, r, t, val);
-        }
-        pushup(id);
+    Info query(int t) {
+        return rangeQuery(t, t);
     }
     void rangeUpdate(int id, int l, int r, int x, int y, const Tag &dx) {
         if(x <= l && r <= y) {
@@ -106,7 +95,7 @@ struct Info {
     i64 mn = INF;
     i64 mx = -INF;
     i64 sum = 0;
-    i64 len = 0;
+    i64 len = 1;
     void apply(const Tag &dx) {
         mn += dx.add;
         mx += dx.add;
@@ -128,26 +117,26 @@ int main() {
     std::cin.tie(nullptr);
     int n, m;
     std::cin >> n >> m;
-    // std::vector<Info> v(n + 1);
-    // for(int i = 1; i <= n; ++i) {
-    //     int x;
-    //     std::cin >> x;
-    //     v[i] = {x, x, x, 1};
-    // }
-    // SegmentTree<Info, Tag> tr(v);
-    SegmentTree<Info, Tag> tr(n);
+    std::vector<Info> v(n + 1);
     for(int i = 1; i <= n; ++i) {
         int x;
         std::cin >> x;
-        tr.update(i, {x, x, x, 1});
+        v[i] = {x, x, x, 1};
     }
+    SegmentTree<Info, Tag> tr(v);
+    // SegmentTree<Info, Tag> tr(n);
+    // for(int i = 1; i <= n; ++i) {
+    //     int x;
+    //     std::cin >> x;
+    //     tr.update(i, Tag(x));
+    // }
     while(m--) {
         int opt, x, y;
         std::cin >> opt >> x >> y;
         if(opt == 1) {
             int k;
             std::cin >> k;
-            tr.rangeUpdate(x, y, {k});
+            tr.rangeUpdate(x, y, Tag(k));
         } else if(opt == 2) {
             std::cout << tr.rangeQuery(x, y).sum << '\n';
         }

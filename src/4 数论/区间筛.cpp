@@ -16,9 +16,9 @@ void findPrime(int n) {
         }
     }
 }
-//区间筛, 筛区间[L, R]的质数
-//
 
+//区间筛, 筛区间[L, R]的质数
+//https://www.luogu.com.cn/problem/UVA10140
 int main() {
     i64 L, R;
     findPrime(MAXN);
