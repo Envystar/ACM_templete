@@ -5,7 +5,6 @@ template<typename Info, typename Tag>
 struct PersistentTree {
     struct Node {
         int l = 0, r = 0;
-        int len = 1;
         Info info;
         Tag tag;
     };
@@ -13,6 +12,7 @@ struct PersistentTree {
 #define rs(x) (node[id].r)
     PersistentTree(int n) : n(n) {}
     PersistentTree(const std::vector<Info> &init) : PersistentTree((int)init.size() - 1) {
+        node.reserve(n << 3);
         auto build = [&](auto self, int l, int r) ->int {
             node.push_back(Node());
             int id = node.size() - 1;
@@ -22,19 +22,17 @@ struct PersistentTree {
                 int mid = (l + r) / 2; 
                 ls(id) = self(self, l, mid);  
                 rs(id) = self(self, mid + 1, r);  
-                node[id].info = node[ls(node[id])].info + node[rs(node[id])].info;
-                node[id].len = node[ls(node[id])].len + node[rs(node[id])].len;
+                node[id].info = node[ls(id)].info + node[rs(id)].info;
             }
             return id;
         };
         root.push_back(build(build, 1, n));
     };
     int update(int version, int t, const Tag &dx) {
-        root.push_back(rangeUpdate(root[version], t, t, dx));
-        return root.size() - 1;
+        return rangeUpdate(version, t, t, dx);
     }
     Info query(int version, int t) {
-        return rangeQuery(root[version], t, t);
+        return rangeQuery(version, t, t);
     }
     int rangeUpdate(int version, int l, int r, const Tag &dx) {
         root.push_back(rangeUpdate(root[version], 1, n, l, r, dx));
