@@ -8,10 +8,10 @@ struct PersistentTree {
         Info info;
         Tag tag;
     };
-#define ls(x) (node[id].l)
-#define rs(x) (node[id].r)
-    PersistentTree(int n) : n(n) {}
-    PersistentTree(const std::vector<Info> &init) : PersistentTree((int)init.size() - 1) {
+#define ls(x) (node[x].l)
+#define rs(x) (node[x].r)
+    PersistentTree(int n) : PersistentTree(std::vector<Info>(n + 1)) {}
+    PersistentTree(const std::vector<Info> &init) : n((int)init.size() - 1) {
         node.reserve(n << 3);
         auto build = [&](auto self, int l, int r) ->int {
             node.push_back(Node());
@@ -28,33 +28,49 @@ struct PersistentTree {
         };
         root.push_back(build(build, 1, n));
     };
-    int update(int version, int t, const Tag &dx) {
-        return rangeUpdate(version, t, t, dx);
-    }
-    Info query(int version, int t) {
-        return rangeQuery(version, t, t);
-    }
-    int rangeUpdate(int version, int l, int r, const Tag &dx) {
-        root.push_back(rangeUpdate(root[version], 1, n, l, r, dx));
+    int update(int version, int pos, const Info &val) {
+        root.push_back(update(root[version], 1, n, pos, val));
         return root.size() - 1;
+    }
+    int update(int version, int pos, const Tag &dx) {
+        root.push_back(update(root[version], 1, n, pos, dx));
+        return root.size() - 1;
+    }
+    Info query(int version, int pos) {
+        return rangeQuery(version, pos, pos);
     }
     Info rangeQuery(int version, int l, int r) {
         return rangeQuery(root[version], 1, n, l, r);
     }
-    int rangeUpdate(int lst, int l, int r, const int &x, const int &y, const Tag &dx) {
+    int update(int lst, int l, int r, const int &pos, const Info &val) {
         node.push_back(node[lst]);
         int id = node.size() - 1;
-        node[id].info.apply(std::min(r, y) - std::max(l, x) + 1, dx);
-        if(x <= l && r <= y) {
-            node[id].tag.apply(dx);
+        if(l == r) {
+            node[id].info = val;
         } else {
             int mid = (l + r) / 2;
-            if(x <= mid) {
-                ls(id) = rangeUpdate(ls(lst), l, mid, x, y, dx);
+            if(pos <= mid) {
+                ls(id) = update(ls(lst), l, mid, pos, val);
+            } else if(pos > mid) {
+                rs(id) = update(rs(lst), mid + 1, r, pos, val);
             }
-            if(y > mid) {
-                rs(id) = rangeUpdate(rs(lst), mid + 1, r, x, y, dx);
+            node[id].info = node[ls(id)].info + node[rs(id)].info;
+        }
+        return id;
+    }
+    int update(int lst, int l, int r, const int &pos, const Tag &dx) {
+        node.push_back(node[lst]);
+        int id = node.size() - 1;
+        if(l == r) {
+            node[id].info.apply(dx);
+        } else {
+            int mid = (l + r) / 2;
+            if(pos <= mid) {
+                ls(id) = update(ls(lst), l, mid, pos, dx);
+            } else if(pos > mid) {
+                rs(id) = update(rs(lst), mid + 1, r, pos, dx);
             }
+            node[id].info = node[ls(id)].info + node[rs(id)].info;
         }
         return id;
     }
@@ -70,8 +86,20 @@ struct PersistentTree {
         if(y > mid) {
             res = res + rangeQuery(rs(id), mid + 1, r, x, y);
         }
-        res.apply(std::min(r, y) - std::max(l, x) + 1, node[id].tag);
         return res;
+    }
+    int kth(int versionl, int versionr, int k) {
+        return kth(root[versionl], root[versionr], 1, n, k);
+    }
+    int kth(int idx, int idy, int l, int r, int k) { //静态区间第k小，不支持修改
+        if(l >= r) return l;
+        int mid = (l + r) / 2;
+        int dx = node[ls(idy)].info.sum - node[ls(idx)].info.sum;
+        if(dx >= k) {
+            return kth(ls(idx), ls(idy), l, mid, k);
+        } else {
+            return kth(rs(idx), rs(idy), mid + 1, r, k - dx);
+        }
     }
 #undef ls
 #undef rs
@@ -90,8 +118,8 @@ struct Tag {
 
 struct Info {
     int sum = 0;
-    void apply(int len, const Tag &dx) {
-        sum += 1LL * len * dx.add;
+    void apply(const Tag &dx) {
+        sum += dx.add;
     }
 };
 
@@ -100,32 +128,33 @@ Info operator+(const Info &x, const Info &y) {
     res.sum = x.sum + y.sum;
     return res;
 }
-
-//可持久化线段树(区间修改，区间历史查询)
-//https://www.luogu.com.cn/problem/P3919
+//主席树(单点修改，历史版本区间查询, 静态区间第k小)
+//https://www.luogu.com.cn/problem/P3834
 int main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
     int n, q;
     std::cin >> n >> q;
-    std::vector<Info> v(n + 1);
+    std::vector<int> v(n + 1), tmp(n + 1);
     for(int i = 1; i <= n; ++i) {
-        std::cin >> v[i].sum;
+        std::cin >> v[i];
+        tmp[i] = v[i];
     }
-    PersistentTree<Info, Tag> tr(v);
-    std::vector<int> version(q + 1);
+    std::sort(tmp.begin() + 1, tmp.end());
+    tmp.erase(std::unique(tmp.begin() + 1, tmp.end()), tmp.end());
+    int m = tmp.size() - 1;
+    PersistentTree<Info, Tag> tr(std::vector<Info>(m + 1));
+    std::vector<int> version(n + 1);
+    version[0] = tr.root.size() - 1;
+    for(int i = 1; i <= n; ++i) {
+        int pos = std::lower_bound(tmp.begin() + 1, tmp.end(), v[i]) - tmp.begin();
+        version[i] = tr.update(version[i - 1], pos, Tag(1));
+    }
     for(int i = 1; i <= q; ++i) {
-        int ver, opt, pos;
-        std::cin >> ver >> opt >> pos;
-        if(opt == 1) {
-            int x;
-            std::cin >> x;
-            int lst = tr.query(version[ver], pos).sum;
-            version[i] = tr.update(version[ver], pos, Tag(x - lst));
-        } else if(opt == 2) {
-            std::cout << tr.query(version[ver], pos).sum << '\n';
-            version[i] = version[ver];
-        }
+        int l, r, k;
+        std::cin >> l >> r >> k;
+        int pos = tr.kth(version[l - 1], version[r], k);
+        std::cout << tmp[pos] << '\n';
     }
     return 0;
 }
