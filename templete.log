@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  7 SEP 2024 00:09
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  7 SEP 2024 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,14 +512,14 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-(./src/1 基础算法/三分.cpp) (./src/1 基础算法/二分.cpp [1]) (./src/1 基础算法/快速幂.cpp) (./src/1 基础算法/离散化.cpp) (./src/2 图论/Tarjan割点.cpp [2]) (./src/2 图论/Tarjan割边.cpp [3]) (./src/2 图论/Tarjan强连通分量.cpp [4]) (./src/2 图论/Tarjan点双连通分量.cpp [5]) (./src/2 图论/Tarjan边双连通分量.cpp) (./src/2 图论/拓扑排序.cpp [6]) (./src/2 图论/最小生成树kruskal.cpp [7]) (./src/2 图论/最小生成树prim.cpp) [8] (./src/3 数据结构/Splay.cpp [9] [10]) (./src/3 数据结构/ST表.cpp [11]) (./src/3 数据结构/主席树.cpp [12] [13]) (./src/3 数据结构/对顶堆.cpp [14]) (./src/3 数据结构/并查集.cpp) (./src/3 数据结构/树状数组.cpp [15]) (./src/3 数据结构/线段树.cpp [16] [17]) (./src/3 数据结构/重链剖分.cpp [18]) (./src/4 数论/MillerRabin.cpp [19]) (./src/4 数论/PollardRho.cpp [20]) (./src/4 数论/区间筛.cpp [21]) (./src/4 数论/欧拉筛.cpp [22]) (./src/5 字符串/EXKMP.cpp) (./src/5 字符串/KMP.cpp [23]) (./src/5 字符串/字符串哈希.cpp [24]) (./src/5 字符串/马拉车.cpp) [25] (./src/6 杂项/康托展开.cpp) (./src/6 杂项/逆康托展开.cpp [26]) [27] (./templete.aux) ) 
+(./src/1 基础算法/三分.cpp) (./src/2 图论/Tarjan割点.cpp [1]) (./src/2 图论/Tarjan割边.cpp) [2] (./src/2 图论/Tarjan强连通分量.cpp) (./src/2 图论/Tarjan点双连通分量.cpp [3]) (./src/2 图论/Tarjan边双连通分量.cpp [4]) (./src/2 图论/拓扑排序.cpp [5]) (./src/2 图论/最小生成树kruskal.cpp [6]) (./src/2 图论/最小生成树prim.cpp) (./src/3 数据结构/Splay.cpp [7] [8] [9]) (./src/3 数据结构/ST表.cpp [10]) (./src/3 数据结构/主席树.cpp [11] [12]) (./src/3 数据结构/对顶堆.cpp [13]) (./src/3 数据结构/并查集.cpp [14]) (./src/3 数据结构/标记永久化主席树.cpp [15]) [16] (./src/3 数据结构/树状数组.cpp) (./src/3 数据结构/波纹疾走树.cpp [17] [18] [19]) (./src/3 数据结构/线段树.cpp [20] [21]) (./src/3 数据结构/重链剖分.cpp [22]) (./src/4 数论/MillerRabin.cpp) (./src/4 数论/PollardRho.cpp [23] [24]) (./src/4 数论/区间筛.cpp [25]) (./src/4 数论/欧拉筛.cpp) (./src/5 字符串/EXKMP.cpp [26]) (./src/5 字符串/KMP.cpp) (./src/5 字符串/字符串哈希.cpp [27]) (./src/5 字符串/马拉车.cpp [28]) (./src/6 计算几何/凸包.cpp [29] [30]) (./src/7 杂项/康托展开.cpp [31]) (./src/7 杂项/逆康托展开.cpp [32]) (./src/7 杂项/高精度.cpp [33] [34]) [35] (./templete.aux) ) 
 Here is how much of TeX's memory you used:
- 10161 strings out of 476683
- 246806 string characters out of 5802284
- 2725012 words of memory out of 5000000
- 30207 multiletter control sequences out of 15000+600000
+ 10387 strings out of 476683
+ 249337 string characters out of 5802284
+ 2846012 words of memory out of 5000000
+ 30429 multiletter control sequences out of 15000+600000
  515085 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,460b,2050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,460b,2058s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on templete.pdf (28 pages).
+Output written on templete.pdf (36 pages).
