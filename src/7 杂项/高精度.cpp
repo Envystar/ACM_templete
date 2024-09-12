@@ -1,6 +1,23 @@
 #include <bits/stdc++.h>
 using i64 = long long;
- 
+
+// using i128= __int128;
+// std::istream&operator>>(std::istream &is,i128 &n){
+// 	std::string s;is>>s;
+// 	n=0;
+// 	for(char i:s) n=n*10+i-'0';
+// 	return is;
+// }
+// std::ostream &operator<<(std::ostream &os,i128 n){
+// 	std::string s;
+// 	while(n){
+// 		s+='0'+n%10;
+// 		n/=10;
+// 	}
+// 	std::reverse(s.begin(),s.end());
+// 	return os<<s;
+// }
+
 struct Bigint { 
     std::string a; 
     int sign;
@@ -39,6 +56,9 @@ struct Bigint {
     } 
     bool operator==(const Bigint &b) const {
         return (a == b.a && sign == b.sign); 
+    } 
+    bool operator!=(const Bigint &b) const {
+        return !operator==(b);
     } 
     Bigint operator+(Bigint b) {
         if(sign != b.sign) {

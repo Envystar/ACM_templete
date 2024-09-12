@@ -1,11 +1,20 @@
 \documentclass{article}
-\usepackage[a4paper, landscape, top=1cm, bottom=1.5cm, left=1.5cm, right=1cm]{geometry} % 设置页边距
+\usepackage[a4paper, landscape, top=1cm, bottom=1.5cm, left=1cm, right=1cm]{geometry} % 设置页边距
 \usepackage[fontset=none]{ctex}
 \usepackage{titlesec}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{fontspec}
 \usepackage{multicol}
+\usepackage{hyperref} 
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  pdfstartview=Fit,
+  breaklinks=true,
+  linktoc=all
+}
 
 % 设置中文字体
 \setCJKmainfont[AutoFakeBold={2.5}]{NSimSun} % 华文中宋
@@ -14,7 +23,7 @@
 \linespread{1.6}
 \setlength{\parskip}{0.5em}
 \setlength{\parindent}{2em}
-\setlength\columnsep{0.7cm} 
+\setlength\columnsep{0.4cm} 
 
 \titleformat{\section}
 {\zihao{-3}\Large\bfseries}
@@ -34,12 +43,12 @@
 
 \lstdefinestyle{cppstyle}{
     language=C++,
-    basicstyle=\ttfamily\footnotesize,
+    basicstyle=\ttfamily\tiny,
     breakatwhitespace=false,
     breaklines=true,
     keepspaces=true,
-    numbers=left,
-    numbersep=5pt,
+    %numbers=left,
+    %numbersep=5pt,
     showspaces=false,
     showstringspaces=false,
     showtabs=false,
@@ -63,7 +72,7 @@
 }
 
 \begin{document}
-\begin{multicols*}{2}
+\begin{multicols*}{3}
 
 \thispagestyle{empty}
 \tableofcontents

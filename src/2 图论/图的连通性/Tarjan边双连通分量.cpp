@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using i64 = long long;
 
-//tarjan求边双连通分量
-//https://www.luogu.com.cn/problem/P8436
 int main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
