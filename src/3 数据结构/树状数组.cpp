@@ -3,9 +3,8 @@
 //树状数组(Fenwick)
 //https://www.luogu.com.cn/problem/P3374
 template<typename T>
-class Fenwick {
-public:
-    Fenwick(int n) : v(std::vector<T>(n + 1)) {}; //有参构造
+struct Fenwick {
+    Fenwick(int n) : v(n + 1) {}; //有参构造
     void update(int x, T dx) { //更新(index, dx) 
         for(int i = x; i < v.size(); i += (i & -i)) {
             v[i] += dx;
@@ -21,7 +20,6 @@ public:
     T range(int l, int r) { //查询区间[L, R]
         return query(r) - query(l - 1);
     }
-private:
     std::vector<T> v;
 };
 

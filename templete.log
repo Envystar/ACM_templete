@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  12 SEP 2024 22:04
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  24 SEP 2024 01:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -634,20 +634,20 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-(./src/1 基础算法/三分.cpp) (./src/2 图论/图的连通性/Tarjan割点.tex) (./src/2 图论/图的连通性/Tarjan割点.cpp) (./src/2 图论/图的连通性/Tarjan割边.tex) (./src/2 图论/图的连通性/Tarjan割边.cpp) [1] (./src/2 图论/图的连通性/Tarjan强连通分量.tex) (./src/2 图论/图的连通性/Tarjan强连通分量.cpp) (./src/2 图论/图的连通性/Tarjan点双连通分量.tex) (./src/2 图论/图的连通性/Tarjan点双连通分量.cpp) (./src/2 图论/图的连通性/Tarjan边双连通分量.tex [2]) (./src/2 图论/图的连通性/Tarjan边双连通分量.cpp) (./src/2 图论/拓扑排序.tex) (./src/2 图论/拓扑排序.cpp) (./src/2 图论/最小生成树kruskal.tex) (./src/2 图论/最小生成树kruskal.cpp [3]) (./src/2 图论/最小生成树prim.tex) (./src/2 图论/最小生成树prim.cpp) (./src/2 图论/树的重心.tex) (./src/2 图论/树的重心.cpp) (./src/3 数据结构/Splay.tex) (./src/3 数据结构/Splay.cpp [4] [5]) (./src/3 数据结构/ST表.tex) (./src/3 数据结构/ST表.cpp) (./src/3 数据结构/主席树.tex) (./src/3 数据结构/主席树.cpp [6]) (./src/3 数据结构/对顶堆.tex) (./src/3 数据结构/对顶堆.cpp [7]) (./src/3 数据结构/并查集.tex) (./src/3 数据结构/并查集.cpp) (./src/3 数据结构/标记永久化主席树.tex) (./src/3 数据结构/标记永久化主席树.cpp [8]) (./src/3 数据结构/树状数组.tex) (./src/3 数据结构/树状数组.cpp) (./src/3 数据结构/波纹疾走树.tex) (./src/3 数据结构/波纹疾走树.cpp [9] [10]) (./src/3 数据结构/线段树.tex) (./src/3 数据结构/线段树.cpp [11]) (./src/3 数据结构/重链剖分.tex) (./src/3 数据结构/重链剖分.cpp) (./src/4 数学/数论/MillerRabin.tex) (./src/4 数学/数论/MillerRabin.cpp) (./src/4 数学/数论/PollardRho.tex) [12] (./src/4 数学/数论/PollardRho.cpp) (./src/4 数学/数论/区间筛.tex) (./src/4 数学/数论/区间筛.cpp [13]) (./src/4 数学/数论/欧拉筛.tex) (./src/4 数学/数论/欧拉筛.cpp) (./src/4 数学/组合数学/卢卡斯定理.tex
+(./src/1 基础算法/三分.cpp) (./src/2 图论/图的连通性/Tarjan割点.tex) (./src/2 图论/图的连通性/Tarjan割点.cpp) (./src/2 图论/图的连通性/Tarjan割边.tex) (./src/2 图论/图的连通性/Tarjan割边.cpp) [1] (./src/2 图论/图的连通性/Tarjan强连通分量.tex) (./src/2 图论/图的连通性/Tarjan强连通分量.cpp) (./src/2 图论/图的连通性/Tarjan点双连通分量.tex) (./src/2 图论/图的连通性/Tarjan点双连通分量.cpp) (./src/2 图论/图的连通性/Tarjan边双连通分量.tex [2]) (./src/2 图论/图的连通性/Tarjan边双连通分量.cpp) (./src/2 图论/拓扑排序.tex) (./src/2 图论/拓扑排序.cpp) (./src/2 图论/最小生成树kruskal.tex) (./src/2 图论/最小生成树kruskal.cpp [3]) (./src/2 图论/最小生成树prim.tex) (./src/2 图论/最小生成树prim.cpp) (./src/2 图论/树的重心.tex) (./src/2 图论/树的重心.cpp) (./src/3 数据结构/Splay.tex) (./src/3 数据结构/Splay.cpp [4] [5]) (./src/3 数据结构/ST表.tex) (./src/3 数据结构/ST表.cpp) (./src/3 数据结构/主席树.tex) (./src/3 数据结构/主席树.cpp [6]) (./src/3 数据结构/对顶堆.tex) (./src/3 数据结构/对顶堆.cpp [7]) (./src/3 数据结构/并查集.tex) (./src/3 数据结构/并查集.cpp) (./src/3 数据结构/标记永久化主席树.tex) (./src/3 数据结构/标记永久化主席树.cpp [8]) (./src/3 数据结构/树状数组.tex) (./src/3 数据结构/树状数组.cpp) (./src/3 数据结构/树状数组2.tex) (./src/3 数据结构/树状数组2.cpp [9]) (./src/3 数据结构/波纹疾走树.tex) (./src/3 数据结构/波纹疾走树.cpp [10]) (./src/3 数据结构/线段树.tex) (./src/3 数据结构/线段树.cpp [11]) (./src/3 数据结构/线段树优化建图.tex) (./src/3 数据结构/线段树优化建图.cpp [12]) (./src/3 数据结构/重链剖分.tex) (./src/3 数据结构/重链剖分.cpp) (./src/4 数学/数论/MillerRabin.tex) (./src/4 数学/数论/MillerRabin.cpp [13]) (./src/4 数学/数论/PollardRho.tex) (./src/4 数学/数论/PollardRho.cpp) (./src/4 数学/数论/区间筛.tex) (./src/4 数学/数论/区间筛.cpp [14]) (./src/4 数学/数论/欧拉筛.tex) (./src/4 数学/数论/欧拉筛.cpp) (./src/4 数学/组合数学/卢卡斯定理.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5.52061> on input line 2.
-) (./src/4 数学/组合数学/卢卡斯定理.cpp) (./src/5 字符串/EXKMP.tex) (./src/5 字符串/EXKMP.cpp [14]) (./src/5 字符串/KMP.tex) (./src/5 字符串/KMP.cpp) (./src/5 字符串/字符串哈希.tex) (./src/5 字符串/字符串哈希.cpp) (./src/5 字符串/马拉车.tex) (./src/5 字符串/马拉车.cpp [15]) (./src/6 计算几何/凸包.tex) (./src/6 计算几何/凸包.cpp [16]) (./src/7 杂项/康托展开.tex) (./src/7 杂项/康托展开.cpp) (./src/7 杂项/逆康托展开.tex) (./src/7 杂项/逆康托展开.cpp [17]) (./src/7 杂项/高精度.tex) (./src/7 杂项/高精度.cpp [18]) [19] (./templete.aux)
+) (./src/4 数学/组合数学/卢卡斯定理.cpp) (./src/5 字符串/EXKMP.tex) [15] (./src/5 字符串/EXKMP.cpp) (./src/5 字符串/KMP.tex) (./src/5 字符串/KMP.cpp) (./src/5 字符串/字符串哈希.tex) (./src/5 字符串/字符串哈希.cpp [16]) (./src/5 字符串/马拉车.tex) (./src/5 字符串/马拉车.cpp) (./src/6 计算几何/凸包.tex) (./src/6 计算几何/凸包.cpp [17]) (./src/7 杂项/康托展开.tex) (./src/7 杂项/康托展开.cpp) (./src/7 杂项/逆康托展开.tex) (./src/7 杂项/逆康托展开.cpp [18]) (./src/7 杂项/高精度.tex) (./src/7 杂项/高精度.cpp [19]) [20] (./templete.aux)
 Package rerunfilecheck Info: File `templete.out' has not changed.
-(rerunfilecheck)             Checksum: 42A20457E9C817464720FF16C5454CED;3993.
+(rerunfilecheck)             Checksum: 6BBE30B8320CF37288AC575A4C627F49;4204.
  ) 
 Here is how much of TeX's memory you used:
- 17382 strings out of 476683
- 363798 string characters out of 5802284
+ 17522 strings out of 476683
+ 366689 string characters out of 5802284
  3611012 words of memory out of 5000000
- 37239 multiletter control sequences out of 15000+600000
+ 37369 multiletter control sequences out of 15000+600000
  516350 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,460b,2408s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,460b,2422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on templete.pdf (20 pages).
+Output written on templete.pdf (21 pages).
