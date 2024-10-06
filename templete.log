@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  30 SEP 2024 23:55
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.3)  6 OCT 2024 18:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,15 +639,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5.52061> on input line 2.
 ) (./src/4 数学/组合数学/卢卡斯定理.cpp) (./src/5 字符串/EXKMP.tex) [15] (./src/5 字符串/EXKMP.cpp) (./src/5 字符串/KMP.tex) (./src/5 字符串/KMP.cpp) (./src/5 字符串/字符串哈希.tex) (./src/5 字符串/字符串哈希.cpp [16]) (./src/5 字符串/马拉车.tex) (./src/5 字符串/马拉车.cpp) (./src/6 计算几何/凸包.tex) (./src/6 计算几何/凸包.cpp [17]) (./src/7 杂项/康托展开.tex) (./src/7 杂项/康托展开.cpp) (./src/7 杂项/逆康托展开.tex) (./src/7 杂项/逆康托展开.cpp [18]) (./src/7 杂项/高精度.tex) (./src/7 杂项/高精度.cpp [19]) [20] (./templete.aux)
 Package rerunfilecheck Info: File `templete.out' has not changed.
-(rerunfilecheck)             Checksum: 6BBE30B8320CF37288AC575A4C627F49;4204.
+(rerunfilecheck)             Checksum: 1C7CE9D723E6AEC955BA38D6D69FE0B2;4294.
  ) 
 Here is how much of TeX's memory you used:
  17433 strings out of 476683
  364559 string characters out of 5802284
- 3611012 words of memory out of 5000000
+ 3600012 words of memory out of 5000000
  37280 multiletter control sequences out of 15000+600000
  516350 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,460b,2422s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,460b,2428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on templete.pdf (21 pages).

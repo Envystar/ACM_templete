@@ -11,6 +11,7 @@
 \contentsline {subsection}{\numberline {2.3}最小生成树kruskal}{3}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}最小生成树prim}{4}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}树的重心}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}流和匹配}{4}{subsection.2.6}%
 \contentsline {section}{\numberline {3}数据结构}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Splay}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}ST表}{6}{subsection.3.2}%
