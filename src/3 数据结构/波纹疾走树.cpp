@@ -5,7 +5,7 @@ struct BitRank {
     // block 管理一行一行的bit
     std::vector<unsigned long long> block;
     std::vector<unsigned int> count;
-     BitRank() {}
+    BitRank() {}
     // 位向量长度
     void resize(const unsigned int num) {
         block.resize(((num + 1) >> 6) + 1, 0);

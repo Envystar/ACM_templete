@@ -22,7 +22,7 @@
 
 \linespread{1.6}
 \setlength{\parskip}{0.5em}
-\setlength{\parindent}{2em}
+\setlength{\parindent}{0em}
 \setlength\columnsep{0.4cm} 
 
 \titleformat{\section}
@@ -102,16 +102,20 @@
 \subsection{拓扑排序}
 \input{./src/2 图论/拓扑排序.tex}
 \lstinputlisting[style=cppstyle]{./src/2 图论/拓扑排序.cpp}
-\subsection{最小生成树kruskal}
-\input{./src/2 图论/最小生成树kruskal.tex}
-\lstinputlisting[style=cppstyle]{./src/2 图论/最小生成树kruskal.cpp}
-\subsection{最小生成树prim}
-\input{./src/2 图论/最小生成树prim.tex}
-\lstinputlisting[style=cppstyle]{./src/2 图论/最小生成树prim.cpp}
+\subsection{最小生成树}
+\subsubsection{Kruskal}
+\input{./src/2 图论/最小生成树/Kruskal.tex}
+\lstinputlisting[style=cppstyle]{./src/2 图论/最小生成树/Kruskal.cpp}
+\subsubsection{Prim}
+\input{./src/2 图论/最小生成树/Prim.tex}
+\lstinputlisting[style=cppstyle]{./src/2 图论/最小生成树/Prim.cpp}
 \subsection{树的重心}
 \input{./src/2 图论/树的重心.tex}
 \lstinputlisting[style=cppstyle]{./src/2 图论/树的重心.cpp}
 \subsection{流和匹配}
+\subsubsection{EdmondsKarp}
+\input{./src/2 图论/流和匹配/EdmondsKarp.tex}
+\lstinputlisting[style=cppstyle]{./src/2 图论/流和匹配/EdmondsKarp.cpp}
 \section{数据结构}
 \subsection{Splay}
 \input{./src/3 数据结构/Splay.tex}
@@ -119,33 +123,35 @@
 \subsection{ST表}
 \input{./src/3 数据结构/ST表.tex}
 \lstinputlisting[style=cppstyle]{./src/3 数据结构/ST表.cpp}
-\subsection{主席树}
-\input{./src/3 数据结构/主席树.tex}
-\lstinputlisting[style=cppstyle]{./src/3 数据结构/主席树.cpp}
 \subsection{对顶堆}
 \input{./src/3 数据结构/对顶堆.tex}
 \lstinputlisting[style=cppstyle]{./src/3 数据结构/对顶堆.cpp}
 \subsection{并查集}
 \input{./src/3 数据结构/并查集.tex}
 \lstinputlisting[style=cppstyle]{./src/3 数据结构/并查集.cpp}
-\subsection{标记永久化主席树}
-\input{./src/3 数据结构/标记永久化主席树.tex}
-\lstinputlisting[style=cppstyle]{./src/3 数据结构/标记永久化主席树.cpp}
 \subsection{树状数组}
-\input{./src/3 数据结构/树状数组.tex}
-\lstinputlisting[style=cppstyle]{./src/3 数据结构/树状数组.cpp}
-\subsection{树状数组2}
-\input{./src/3 数据结构/树状数组2.tex}
-\lstinputlisting[style=cppstyle]{./src/3 数据结构/树状数组2.cpp}
+\subsubsection{树状数组}
+\input{./src/3 数据结构/树状数组/树状数组.tex}
+\lstinputlisting[style=cppstyle]{./src/3 数据结构/树状数组/树状数组.cpp}
+\subsubsection{树状数组2}
+\input{./src/3 数据结构/树状数组/树状数组2.tex}
+\lstinputlisting[style=cppstyle]{./src/3 数据结构/树状数组/树状数组2.cpp}
 \subsection{波纹疾走树}
 \input{./src/3 数据结构/波纹疾走树.tex}
 \lstinputlisting[style=cppstyle]{./src/3 数据结构/波纹疾走树.cpp}
 \subsection{线段树}
-\input{./src/3 数据结构/线段树.tex}
-\lstinputlisting[style=cppstyle]{./src/3 数据结构/线段树.cpp}
-\subsection{线段树优化建图}
-\input{./src/3 数据结构/线段树优化建图.tex}
-\lstinputlisting[style=cppstyle]{./src/3 数据结构/线段树优化建图.cpp}
+\subsubsection{主席树}
+\input{./src/3 数据结构/线段树/主席树.tex}
+\lstinputlisting[style=cppstyle]{./src/3 数据结构/线段树/主席树.cpp}
+\subsubsection{标记永久化主席树}
+\input{./src/3 数据结构/线段树/标记永久化主席树.tex}
+\lstinputlisting[style=cppstyle]{./src/3 数据结构/线段树/标记永久化主席树.cpp}
+\subsubsection{线段树}
+\input{./src/3 数据结构/线段树/线段树.tex}
+\lstinputlisting[style=cppstyle]{./src/3 数据结构/线段树/线段树.cpp}
+\subsubsection{线段树优化建图}
+\input{./src/3 数据结构/线段树/线段树优化建图.tex}
+\lstinputlisting[style=cppstyle]{./src/3 数据结构/线段树/线段树优化建图.cpp}
 \subsection{重链剖分}
 \input{./src/3 数据结构/重链剖分.tex}
 \lstinputlisting[style=cppstyle]{./src/3 数据结构/重链剖分.cpp}
@@ -194,5 +200,8 @@
 \subsection{高精度}
 \input{./src/7 杂项/高精度.tex}
 \lstinputlisting[style=cppstyle]{./src/7 杂项/高精度.cpp}
+\subsection{高维前缀和}
+\input{./src/7 杂项/高维前缀和.tex}
+\lstinputlisting[style=cppstyle]{./src/7 杂项/高维前缀和.cpp}
 \end{multicols*}
 \end{document}

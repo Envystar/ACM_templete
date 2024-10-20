@@ -28,7 +28,7 @@ struct Bigint {
     int size() {
         return a.size(); 
     } 
-    Bigint normalize(int newSign) { //removes leading 0, fixes sign 
+    Bigint normalize(int newSign) { //removes leading 0, fixes sign (base)
         for(int i = a.size() - 1; i > 0 && a[i] == '0'; --i) {
             a.erase(a.begin() + i); 
         } 
