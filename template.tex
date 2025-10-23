@@ -11,6 +11,7 @@
 \usepackage{hyperref}
 \usepackage{colortbl}
 \usepackage{grffile}
+\usepackage{fancyhdr}
 
 \hypersetup{
   colorlinks=true,
@@ -58,7 +59,7 @@
 \definecolor{codepunctuality}{RGB}{146, 146, 0}
 \definecolor{codenumber}{RGB}{0, 146, 146}
 \definecolor{codecomment}{RGB}{136, 0, 0}
-
+% \definecolor{codecomment}{RGB}{136, 0, 0}
 \lstdefinestyle{cppstyle}{
     language=C++,
     basicstyle=\ttfamily\footnotesize,
@@ -148,7 +149,16 @@
 \end{center}
 % ===================== 封面 ======================================
 
-\thispagestyle{empty}
+\fancypagestyle{coverpage}{
+  \fancyhf{} % 清空默认头部和页脚
+  \fancyfoot[R]{\normalsize \color{gray} \textbf{@enar}} % 右下角页脚
+  \renewcommand{\headrulewidth}{0pt} % 移除头部线
+  \renewcommand{\footrulewidth}{0pt} % 移除页脚线
+  \fancyfootoffset[R]{1.5cm}
+}
+\thispagestyle{coverpage}
+    
+
 \newpage
 \setcounter{page}{1}
 
