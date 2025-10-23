@@ -6,7 +6,6 @@ struct PersistentTree {
     struct Node {
         int l = 0, r = 0;
         Info info;
-        Tag tag;
     };
 #define ls(x) (node[x].l)
 #define rs(x) (node[x].r)
