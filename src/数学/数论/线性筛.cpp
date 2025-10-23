@@ -21,19 +21,19 @@ struct Sieve {
     int minp(int x) { 
         return mnp[x]; 
     }
-    int phi(int x) {
+    int phi(int x) { //欧拉函数
         static auto _phi = build([&](auto &f, int i, int p, int j) {
             f[i] = f[j] * (p == mnp[j] ? p : p - 1);
         });
         return _phi[x];
     }
-    int mu(int x) {
+    int mu(int x) { //莫比乌斯函数
         static auto _mu = build([&](auto &f, int i, int p, int j) {
             f[i] = (p == mnp[j] ? 0 : -f[j]);
         });
         return _mu[x];
     }
-    int d(int x) {
+    int d(int x) { //约数个数函数
         static auto _d = build([&](auto &f, int i, int p, int j) {
             static std::vector<int> a(n + 1);
             a[i] = (p == mnp[j] ? a[j] + 1 : 1);
@@ -41,7 +41,7 @@ struct Sieve {
         });
         return _d[x];
     }
-    int sigma(int x) {
+    int sigma(int x) { //约数和函数
         static auto _sigma = build([&](auto &f, int i, int p, int j) {
             static std::vector<i64> s(n + 1);
             s[i] = (p == mnp[j] ? s[j] * p : p);
