@@ -82,7 +82,7 @@ struct Bigint {
         }
         int s = sign; sign = b.sign = 1;
         if((*this) < b) {
-            return (b - (-(*this))).normalize(-s);
+            return (-(b - (*this))).normalize(-s);
         }
         Bigint c;
         for(int i = 0, borrow = 0; i < a.size(); ++i) {
