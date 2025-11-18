@@ -17,7 +17,7 @@ std::vector<int> manacher(const std::string& s) {
         if(i <= mid + v[mid]) {
             v[i] = std::min(v[2 * mid - i], mid + v[mid] - i);// (t + i) / 2 = mid <=> t = 2 * mid - i;
         }
-        while(t[i - v[i] - 1] == t[i + v[i] + 1] && 0 <= i - v[i] - 1 && i + v[i] + 1 < n) {
+        while(0 <= i - v[i] - 1 && i + v[i] + 1 < n && t[i - v[i] - 1] == t[i + v[i] + 1]) {
             ++v[i];
         }
         if(i + v[i] > mid + v[mid]) {
