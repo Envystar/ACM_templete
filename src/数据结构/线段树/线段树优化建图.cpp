@@ -28,10 +28,10 @@ struct STOG {
     }
     //model == 0 时, 从pos 到 [x, y]连边，边权为w
     //model == 1 时, 从[x, y] 到 pos连边，边权为w
-    void rangeUpdate(int pos, int x, int y,int w, int model) {
+    void rangeUpdate(int pos, int x, int y, int w, int model) {
         rangeUpdate(1, 1, n, pos, x, y, w, model);
     }
-    void rangeUpdate(int id, int l, int r, int pos, int x, int y, int w, auto model) {
+    void rangeUpdate(int id, int l, int r, int pos, int x, int y, int w, int model) {
         if(x <= l && r <= y) {
             if(model == 0) {
                 update(pos, in[id], w);
